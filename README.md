@@ -3,7 +3,7 @@
 <img src="https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/master/remote-control/screenshot.png?raw=true" height="400">
 
 
-put js and the folder files in your www dir and add the js files to your resources in ui-lovelace.yaml
+Put js and the folder files in your www dir and add the js files to your resources in ui-lovelace.yaml
 ```
 resources:
   - url: /local/content-card-remote-control.js
@@ -13,7 +13,7 @@ resources:
 configuration is very easy. first, find your broadlink id for sending packets (can be found under HA services page),
 and then just configure the broadlink codes for each button.
 
-all buttuns are configured according to the id of the button in the html section of `remote-html.js`
+All buttons are configured according to the id of the button in the html section of `remote-html.js`
 
 simple remote example:
 ```
