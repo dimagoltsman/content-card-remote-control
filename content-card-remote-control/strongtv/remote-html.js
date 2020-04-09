@@ -124,7 +124,7 @@ function getRemoteStyle_strongtv(config) {
 	width: 32px;
 	height: 20px;
 	left: 160px;
-	top: 613px;
+	top: 616px;
 	background: url(${base_url}/blue.png) no-repeat 0px 0px
 }
 
@@ -526,7 +526,7 @@ function getRemoteStyle_strongtv(config) {
 	width: 32px;
 	height: 20px;
 	left: 27px;
-	top: 612px;
+	top: 616px;
 	background: url(${base_url}/red.png) no-repeat 0px 0px
 }
 
