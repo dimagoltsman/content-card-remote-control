@@ -10,6 +10,8 @@ resources:
     type: js
 ```
 
+if it doesnt load, copy ```content-card-remote-control``` dir to ```www```
+
 configuration is very easy. first, find your broadlink id for sending packets (can be found under HA services page),
 and then just configure the broadlink codes for each button.
 
