@@ -7,8 +7,8 @@
 Put js and the folder files in your www dir and add the js files to your resources in ui-lovelace.yaml
 ```
 resources:
-  - url: /hacsfiles/content-card-remote-control/content-card-remote-control.js
-    type: module
+  - url: /local/content-card-remote-control.js
+    type: js
 ```
 
 if it doesnt load, copy ```content-card-remote-control``` dir to ```www```
