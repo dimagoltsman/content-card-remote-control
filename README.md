@@ -1,7 +1,7 @@
 # Remote Control card #
 
 <img src="https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/master/remote-control/screenshot.png?raw=true" height="400">
-
+# This repo is now migrated to: https://github.com/dimagoltsman/generic-remote-control-card #
 
 
 Put js and the folder files in your www dir and add the js files to your resources in ui-lovelace.yaml
