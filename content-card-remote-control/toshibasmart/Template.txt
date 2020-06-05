@@ -1,0 +1,12 @@
+#remote-control-toshibasmart li#nine a {
+	width: px;
+	height: px;
+	left: px;
+	top: px;
+	background: url(${base_url}/nine.png) no-repeat 0px 0px
+}
+
+#remote-control-toshibasmart li#nine a:hover {
+	background: url(${base_url}/nine_over.png) no-repeat 0px 0px
+}
+
