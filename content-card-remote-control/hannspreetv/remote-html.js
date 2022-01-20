@@ -1,9 +1,10 @@
 function getRemoteStyle_hannspreetv(config) {
    
-   const base_url = `/local/content-card-remote-control/${config.remote_template}`;    
+   const template = config.remote_template;
+   const base_url = `/hacsfiles/generic-remote-control-card/remotes/${template}`;
     
   return `
-    ha-card{
+  ha-card{
     	background-color:transparent;
     	box-shadow:var(--paper-material-elevation-0_-_box-shadow);
     }
@@ -28,7 +29,7 @@ function getRemoteStyle_hannspreetv(config) {
 #remote-control-hannspreetv h2,
 #remote-control-hannspreetv span {
 	position: absolute;
-	left: 5000px
+	display: none;
 }
 
 #remote-control-hannspreetv ul {
@@ -611,43 +612,43 @@ function getRemoteHtml_hannspreetv(config){return `
 					Main navigation
 				</h2>
 				<ul>
-					<li id="source" class="myButton-hannspreetv"><a href="#" title="source"><span>source</span></a></li>
-					<li id="power" class="myButton-hannspreetv"><a href="#" title="power"><span>power</span></a></li>
-					<li id="one" class="myButton-hannspreetv"><a href="#" title="one"><span>one</span></a></li>
-					<li id="two" class="myButton-hannspreetv"><a href="#" title="two"><span>two</span></a></li>
-					<li id="three" class="myButton-hannspreetv"><a href="#" title="three"><span>three</span></a></li>
-					<li id="four" class="myButton-hannspreetv"><a href="#" title="four"><span>four</span></a></li>
-					<li id="five" class="myButton-hannspreetv"><a href="#" title="five"><span>five</span></a></li>
-					<li id="six" class="myButton-hannspreetv"><a href="#" title="six"><span>six</span></a></li>
-					<li id="seven" class="myButton-hannspreetv"><a href="#" title="seven"><span>seven</span></a></li>
-					<li id="eight" class="myButton-hannspreetv"><a href="#" title="eight"><span>eight</span></a></li>
-					<li id="nine" class="myButton-hannspreetv"><a href="#" title="nine"><span>nine</span></a></li>
-					<li id="eco" class="myButton-hannspreetv"><a href="#" title="eco"><span>eco</span></a></li>
-					<li id="zero" class="myButton-hannspreetv"><a href="#" title="zero"><span>zero</span></a></li>
-					<li id="guide" class="myButton-hannspreetv"><a href="#" title="guide"><span>guide</span></a></li>
-					<li id="menu" class="myButton-hannspreetv"><a href="#" title="menu"><span>menu</span></a></li>
-					<li id="up" class="myButton-hannspreetv"><a href="#" title="up"><span>up</span></a></li>
-					<li id="exit" class="myButton-hannspreetv"><a href="#" title="exit"><span>exit</span></a></li>
-					<li id="left" class="myButton-hannspreetv"><a href="#" title="left"><span>left</span></a></li>
-					<li id="ok" class="myButton-hannspreetv"><a href="#" title="ok"><span>ok</span></a></li>
-					<li id="right" class="myButton-hannspreetv"><a href="#" title="right"><span>right</span></a></li>
-					<li id="option" class="myButton-hannspreetv"><a href="#" title="option"><span>option</span></a></li>
-					<li id="down" class="myButton-hannspreetv"><a href="#" title="down"><span>down</span></a></li>
-					<li id="return" class="myButton-hannspreetv"><a href="#" title="return"><span>return</span></a></li>
-					<li id="volume_plus" class="myButton-hannspreetv"><a href="#" title="volume_plus"><span>volume_plus</span></a></li>
-					<li id="volume_minus" class="myButton-hannspreetv"><a href="#" title="volume_minus"><span>volume_minus</span></a></li>
-					<li id="info" class="myButton-hannspreetv"><a href="#" title="info"><span>info</span></a></li>
-					<li id="mute" class="myButton-hannspreetv"><a href="#" title="mute"><span>mute</span></a></li>
-					<li id="channel_plus" class="myButton-hannspreetv"><a href="#" title="channel_plus"><span>channel_plus</span></a></li>
-					<li id="channel_minus" class="myButton-hannspreetv"><a href="#" title="channel_minus"><span>channel_minus</span></a></li>
-					<li id="text" class="myButton-hannspreetv"><a href="#" title="text"><span>text</span></a></li>
-					<li id="sub" class="myButton-hannspreetv"><a href="#" title="sub"><span>sub</span></a></li>
-					<li id="list" class="myButton-hannspreetv"><a href="#" title="list"><span>list</span></a></li>
-					<li id="tv" class="myButton-hannspreetv"><a href="#" title="tv"><span>tv</span></a></li>
-					<li id="red" class="myButton-hannspreetv"><a href="#" title="red"><span>red</span></a></li>
-					<li id="green" class="myButton-hannspreetv"><a href="#" title="green"><span>green</span></a></li>
-					<li id="yellow" class="myButton-hannspreetv"><a href="#" title="yellow"><span>yellow</span></a></li>
-					<li id="blue" class="myButton-hannspreetv"><a href="#" title="blue"><span>blue</span></a></li>				
+					<li id="source" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="power" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="one" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="two" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="three" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="four" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="five" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="six" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="seven" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="eight" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="nine" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="eco" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="zero" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="guide" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="menu" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="up" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="exit" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="left" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="ok" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="right" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="option" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="down" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="return" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="volume_plus" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="volume_minus" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="info" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="mute" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="channel_plus" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="channel_minus" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="text" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="sub" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="list" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="tv" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="red" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="green" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="yellow" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>
+					<li id="blue" class="myButton-hannspreetv"><a href="#" title=" "><span> </span></a></li>			
 					
 				</ul>
 

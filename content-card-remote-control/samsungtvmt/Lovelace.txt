@@ -1,0 +1,268 @@
+buttons:
+  blue:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgBGAJOVETgSOBE4ERQRFBEUERMRFBE4EjgROBITERQRFBETERQRFBE4ETkRFBE4ERQRExITETcTExEUETgSExE5ETgROREADQUAAA==
+  centre:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgBGAJOUEjgROBE5ERQRExEUERQRExI4ETgROREUERMRFBEUERQRExEUERQROBEUETcSOREUETgROBI4ERQROBEUERQROBEADQUAAA==
+  ch_list:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgBGAJWTETgTNhM3ExISEhMSExIRFBI3EzYTNxEUERMTEhMSExISNxM2ExITNxISEzcTNhMSERQSEhM3ExISNxMSEhMSNxMADQUAAA==
+  channel_minus:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJWTETgSOBE4ERQRFBEUERMTEhE4EzcROBEUERQRFBISExIRFBEUEhIRFBM2EhMRFBEUEjcROBI4ETgSExE5EjcROBIABgCVkhI4ETgSOBEUERMSExEUExISNxM2EjgRFBETEhMTEhEUERMSExEUExISNxMSExISEhM3ETgRORE4ERQTNhI4ETgTAA0FAAAAAAAAAAAAAAAA
+  channel_plus:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgBGAJWTEzYTNxI3ExITEhISExITEhM2EzcTNhEUExITERMSExITEhI3ExITEhI3ExITERMSEzcSEhM3EzYTEhM2EzcTNhMADQUAAA==
+  down:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJOVETgRORE4ERQRFBETERQRFBE4ETkROBEUERQRExEUERQROBEUERQRExITETkROBEUERMSNxI4ETkROBEUERQROBEABgCTlRE4EjgROBEUERQRFBETERQROBI4ETgRFBEUERQRExEUETgSExEUERQRExI4ETcSFBEUETgRORE4ETkRExEUETgSAA0FAAAAAAAAAAAAAAAA
+  e_manual:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJSTETkROBE5ERMSExEUERQSEhI4ETgROREUERMRFBEUERMSOBE4ETkSNxE5ETgRFBEUERMTEhEUEhMRExEUEzYSOBEABgCUkxI4ETgSOBEUERMRFBEUERQROBE4ETkRFBETERQRFBETEjgROBE5ETgRORE3EhQRExITERQRFBETERQRFBE3EjkRAA0FAAAAAAAAAAAAAAAA
+  eight:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgBGAJWTETgTNxE4EhMRFBEUERMTEhM2EjgTNhMSExITEhISExITNhMSETkTNhEUExITERMSExITNhMSExITNhM3EjcRORIADQUAAA==
+  exit:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgBGAJOVETgSOBE4ERQRFBEUERMRFBE4EjgROBEUERQRFBETERQROBITETgSOBEUETgRFBEUERMSOBEUERMRORETEjgROBEADQUAAA==
+  fast_back:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJOUETkROBE5ERQRExEUERQRExI4ETgROREUERMRFBEUERQROBEUETgRFBEUERMSOBEUERMROBIUETgROBI3EhQROBEABgCTlRE4EjgROBEUERQRFBETERQROBI4ETgSExEUERQRExEUETgSExE5ERMSExEUETgRFBEUETgRFBE4EjgROBEUETgSAA0FAAAAAAAAAAAAAAAA
+  fast_forward:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJOUEjgROBE5ERQRExEUERQRExI4ETgROREUERMRFBEUERMSExEUERQROBEUERMSOBEUETgROBI4ERQROBE4EhMROREABgCTlBI4ETgRORETEhMRFBEUERMRORE4ETkRExITERQRFBETERQRFBEUETgRFBETEjgRFBE4ETgSOBEUETgRORETETkRAA0FAAAAAAAAAAAAAAAA
+  five:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJWTETgSOBE4EhMRFBEUEhITEhE5ETgTNhITERQRFBETEhMTNxETExITNhITExITEhMSEhITNxI3ExITNhI4ETgTNxMABf6VkxM2EzcTNBMUERQSEhMSExIROBM3ETgRFBMSEhMSEhMSEzYSExEUEzYTEhEUExISEhMSEzcSNxEUEzYRORE4EzUUAA0FAAAAAAAAAAAAAAAA
+  four:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJWTEzYTNxM2ExITEhMSEhITEhM2EzUVNhMSExITEhISExITEhMRExITNxISExITEhMSEjcTNhM3ExISNxM2EzcTNhMABf+UkxE5EjcTNxISExITEhMSEhITNxE4EzcRExMSExITEhISERQTEhISEzcTEhISExITEhM2EzcSNxMSEzYTNxE4EzcRAA0FAAAAAAAAAAAAAAAA
+  green:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJOVETgRORE4ERQRFBETEhMRFBE4ETkROBEUERQRExITERQRFBETETkRExI4ERQRExEUETgSOBEUETgRFBE4ETkROBEABf+UlRE4ETgSOBEUERMSExEUERQROBE4EjgRFBETERQRFBEUERMRFBE4EhMROBITERQRFBE4ETkRExI4ERQROBE4EjgRAA0FAAAAAAAAAAAAAAAA
+  guide:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgBGAJWSEjgTNhI4ERQSEhMSExITEhI3EzYTNxEUEhITEhEUExISNxM2EzcROBMSExITNhEUExITEhISExITNhM3ExISNxMADQUAAA==
+  info:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgBGAJaSEzYTNxM2FBEUEBQRExITEhM2FDYTNhMSExETEhQRFBEUNRM3EzYTNhM3ExITERQRExITEhMRExIUERM2FDYTNBUADQUAAA==
+  left:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJOUETkROBE5ERMRFBEUERQRExE5ETgRORETERQRFBEUERMRORETEjgRFBETETkROBEUERQROBEUETgRORETEhMROREABgCTlBE5ETgRORETERQRFBEUERMRORE4ETgSExEUERQRExITETkRExE5ERQRExE5ETgRFBEUETgRFBE4ETkRExITETkRAA0FAAAAAAAAAAAAAAAA
+  media_p:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgBGAJaSEzYTNxM2ExITEhMRExITEhM2EzcTNhMSExISEhMSExITEhISEzcTNhMSExITERM3EzYTNxMSEhITNxM2EzcSEhMADQUAAA==
+  menu:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgBGAJSTEzcROBM3ERQSEhEUExITERM3ETgTNxMSEhITEhMSExISEhM3EhITNxE4ERQTEhMSEjcTEhM2ExITEhI3EzcSNxMADQUAAA==
+  mute:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgBGAJWSEzcTNhM2ExITEhMSExISEhM3EzYTNxISExITEhMSEhITNxM2EzcSNxMSExISEhMSExITEhISExITNhM3EzYTNxMADQUAAA==
+  nine:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJWTETgSOBE4EhMRFBEUERMSExE5ETgRORETERQRFBEUERMTEhE4EjgROBMSERQRFBETETkSExISERQROBM3ETgSOBMABfyXkxM2EzcROBEUERQRFBETExITNhI4EzYTEhMSExISEhEUExISNxE5ETgRFBMSEhITEhE4ExIRFBMSEjcTNhM3ETgSAA0FAAAAAAAAAAAAAAAA
+  one:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgBGAJaSEzYTNxM2ExITEhMRFBETEhQ1EzcTNhQRExIUEBQRFBETEhMRFDYUERMRFBEUERQREzYTNhMSFDYTNhQ1EzcTNhMADQUAAA==
+  pause:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJOUEjgROBE5ERQRExEUERQRExI4ETgRORETEhMRFBEUERMRFBE5ERMRORETEhMRORETETkRExI4ERQROBE4EhMROREABgCSlRE5ETgRORETERQRFBEUERMRORE4ETkRExEUERQRFBETERQROBITETkRExEUETgSExE5ERMSOBEUETgROBITETkRAA0FAAAAAAAAAAAAAAAA
+  pic_size:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJSTETkROBE5ERMSExEUERQRExE5ETgRORETEhMRFBEUERMRFBE4EjgRNxM4ETgRFBEUETgRFBEUERQRExEUETgSOBEABgCTlRE4ETkROBEUERQRExEUERQROBE5ETgRFBEUERMRFBEUERQROBE4EjgROBE5ERQRExE5ERMSExEUERQRExI4ETgRAA0FAAAAAAAAAAAAAAAA
+  play:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCQAJOVETgSOBE4EhMRFBEUERMRFBE4EjgROBITERQRFBETEhMRORE4ETgSExEUERQROBEUERQRExEUETgSOBE4EhMROREABgCTlBI4ETgSOBEUERMRFBEUERQROBE4EjgRFBETERQRFBEUETgROBI4ERQRExEUETgSExEUERQRExI4ETgRORETEjgRAAvVBwANBQAAAAAAAAAA
+  power:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCQAJWTEjcTNhM3ERQTERMSExITEhI3EzYTNxEUEhITEhMSExISEhI4ERQSEhMSExISEhITETkRExM3ETgTNxE4ETkROBEABgCVkxE4EjgROBEUERQRFBETERQROBI4ETgRFBEUERQRExEUERQROBEUERQRExITERQRFBE4ERQROBE5ETgRORE4ETkRAAmDBAANBQAAAAAAAAAA
+  pre_ch:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJWTETgSOBE4ERQRFBEUERMRFBE4EjgROBEUERQTEhETEhMROBM3ExIRExM3ERQSEhEUERQTEhI1EzgTEhE5ETgTNxEABgCUkxI4ETgROREUERMRFBEUERQROBE4EzcTEhETExITEhETEjgROBEUExIROBMSExIRExMSExIROBI4ExIROBE4EjgRAA0FAAAAAAAAAAAAAAAA
+  red:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJOVETgRORE4ERQRFBETEhMRFBE4EjgROBEUERQRFBETERQRFBETEjgROBEUETgSOBEUETgRORETERQRORETERQROBIABgCSlRE5ETgRORETERQRFBEUERMRORE4ETkRExEUERQRFBETERQRFBE4ETkRExE5ETgRFBE3EzgRFBETETkRFBETETkRAA0FAAAAAAAAAAAAAAAA
+  return:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJSTETgSOBE4EhMRFBEUERMRFBE5ETgROBITERQRFBETERQRFBEUERMRORE4ERQROBEUETgSOBE4ERQRFBE4ERQROBIABf+TlRE4EjgROBEUERQRExITERQROBE5ETgRFBEUERMSExEUERQRExEUETgSOBEUETgRFBE4ETkROBEUERQROBEUETgRAA0FAAAAAAAAAAAAAAAA
+  right:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJOUEjgROBI4ERQRExEUERQRFBE4ETgSOBEUERMSExEUERQRExI4ERQRExEUETgSOBEUETgRFBE4ETkROBEUERQROBEABgCTlBI4EjgROBITERQRFBETERQROBI4ETgSExEUERQRExITERQROBEUERQRFBE4ETgSExE5ERMRORE4ETkRExITETkRAA0FAAAAAAAAAAAAAAAA
+  seven:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgBGAJWTETgSOBE4ERQRFBEUEhIRFBE4EjgROBMSERQRFBETERQTEhMSETgROBITERQRFBETEzcROBEUExISNxE5ETgROBIADQUAAA==
+  six:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJWSEjgROBE5ERQRExEUERQTERM3ETgROREUERMTEhMSEhMSEhE5ERMSOBMSERMTEhEUEzYTEhM2EhMTNxE4EzcROBMABf6VkxE4EjgROBMSExITEhISExITNhM3EzYTEhMSExISEhMSExITNhMSEzYTEhMSExISEhM3ExETNxMSEjcTNhM3ETgTAA0FAAAAAAAAAAAAAAAA
+  source:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJaRFTUUNRQ2FBEUEBQRFBEUERQ1FDUUNhQRFBAUERQRFBEUNRQRFBEUEBQRFBEUEBQRFBEUNRQ2FDUUNhQ1FDYUNRQABf2WkhQ1FDYUNRQRFBEUEBQRFBEUNRQ2FDUUERQRFBAUERQRFDUUERQRFBEUEBQRFBEUEBQRFDYUNRQ1FTUUNRQ2FDUUAA0FAAAAAAAAAAAAAAAA
+  stop:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCQAJOVETgRORE4ERQRFBETERQRFBE4ETkROBEUERQRExEUERQRExI4ETgSExEUERQROBEUETgRFBEUETgROBI4ERQROBEABgCTlRE4ETgSOBEUERMSExEUERQROBE4EjgRFBETERQRFBEUERMRORE4ERQRFBETETkRExI4ERQRExE5ETgRORETEjgRAAz4BwANBQAAAAAAAAAA
+  subs:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJOVETgROBI4ERQRExITERQRFBE4ETgSOBEUERMRFBEUERQROBEUETgRFBEUETgRFBEUERMRORETEjgROBEUETgSOBEABgCTlBE5ETgRORETEhMRFBEUERMRORE4ETkRExEUERQRFBETETkRExI4ERQRExE2FBMSExEUETgRFBE4EjgRFBE4ETgSAA0FAAAAAAAAAAAAAAAA
+  three:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJWTETgRORE4ERQRFBETERQTEhE4ETkROBEUERQRExITERQRFBI3ETgTEhEUExISExETEzcSEhMSEzcSNxM3ETgROBIABgCUkxM3ETgRORETEhMTEhEUEhITNxE4ETkRExMSExIRFBISExITNxE4ExIRFBISExITEhE4ExITEhI3EzcSNxM2EzcTAA0FAAAAAAAAAAAAAAAA
+  tools:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgBGAJWTEzcSNxM2ExITEhMSExISEhM3EzYTNxISExITEhMSEhITNxM2ExITNhMSExITNhMSExITERM3ExITNhM3EhITNxMADQUAAA==
+  ttx_mix:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJWSEjgROBI4ERQRExITERQRFBE4ETkROBEUERQRExEUERQRFBETETkROBEUETgSExEUETgSOBEUERMROREUETgROBIABgCTlBI4ETgSOBEUERMRFBEUERQROBE4EjgRFBETERQRFBEUERMRFBE4EjcSFBE4ERQRFBE4ETgSExEUETgRFBE4EjgRAA0FAAAAAAAAAAAAAAAA
+  two:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJSTEzcTNhM3ExISEhMSExITEhI3EzcSNxMSExISEhMSExITNhMSEzYTEhMSExITERMSExITNhMSEzcSNxM2EzcTNhMABf+VkxI3EzcSNxMSExISEhMSExITNhM3EjcTEhMSEhITEhMSEzYTEhM2ExITEhMSExETEhMSEzYTEhM3EjcTNhM3EzYTAA0FAAAAAAAAAAAAAAAA
+  up:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJSTETkROBM3EhITEhMSExISEhM3EzYTNxETExITEhMSExETEhMSExISEhMSEzYTNxMSEzYTNxI3EzcSNxMSExISNxMABf6VkxM2EzcTNhMSExIRExMSExITNhM3EzYRFBMSEhITEhMSExISEhMSExITEhI3EzMWEhE5EjcTNhI4EzYTEhMSEzYRAA0FAAAAAAAAAAAAAAAA
+  volume_minus:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgBGAJSTETkROBM2EhMRFBMSERMSExE5EjcROBITExIRFBISERQROBI4ERQSNxEUERQSEhMSERQRFBI3ExIROBE5ETgROBIADQUAAA==
+  volume_plus:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJSTEjgROBI4ERQRExEUERQSExE4EzYSOBEUERMRFBEUExISNxE4EjgRFBETExIRFBMSERMRFBEUEzYRORE4ETgTNxEABgCVkhI4ETgSOBEUERMTEhEUERQROBE4EjgRFBISExIRFBMSEjcTNhI4ExISEhMSExITEhETERQTEhE4ETkSNxE5EjcTAA0FAAAAAAAAAAAAAAAA
+  yellow:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgBGAJOVETgRORE4ERQRExITERQRFBE4ETkROBEUERMSExEUERQROBEUETgRFBE4EhMRFBEUERMSOBEUETgRFBE4ETkROBEADQUAAA==
+  zero:
+    call: remote.send_command
+    data:
+      entity_id: remote.kitchen_tv_remote
+      command: >-
+        b64:JgCMAJWTETgRORE4ERQRFBETERQRFBE4ETkROBEUERQRExEUExIROBEUERQRFBE4ERQRFBETERQROBI4ETgSExE5EjcROBIABgCVkxE4ETgSOBEUERMSExEUERQSNxE4EjgRFBEUERMTEhEUETgRFBMSEhISOBEUERMRFBMSETgTNxE4ERQROBI4ETgTAA0FAAAAAAAAAAAAAAAA
+name: Samsung TV
+remote_template: samsungtv
+type: 'custom:generic-remote-control-card'

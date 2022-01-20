@@ -1,9 +1,10 @@
 function getRemoteStyle_gotv(config) {
    
-   const base_url = `/local/content-card-remote-control/${config.remote_template}`;    
+   const template = config.remote_template;
+   const base_url = `/hacsfiles/generic-remote-control-card/remotes/${template}`;
     
   return `
-    ha-card{
+  ha-card{
     	background-color:transparent;
     	box-shadow:var(--paper-material-elevation-0_-_box-shadow);
     }
@@ -28,7 +29,6 @@ function getRemoteStyle_gotv(config) {
 #remote-control-gotv h2,
 #remote-control-gotv span {
 	position: absolute;
-	left: 5000px
 }
 
 #remote-control-gotv ul {
@@ -736,6 +736,7 @@ function getRemoteStyle_gotv(config) {
   `;
 }
 
+
 function getRemoteHtml_gotv(config){return `
        <div class="container">
             <div style="text-align:center">
@@ -743,55 +744,55 @@ function getRemoteHtml_gotv(config){return `
 			</div>
 			<div id="remote-control-gotv">
 				<h2>
-					Main navigation
+			
 				</h2>
 				<ul>
-					<li id="power_tv" class="myButton-gotv"><a href="#" title="power_tv"><span>power_tv</span></a></li>
-					<li id="source" class="myButton-gotv"><a href="#" title="source"><span>source</span></a></li>
-					<li id="power" class="myButton-gotv"><a href="#" title="power"><span>power</span></a></li>
-					<li id="one" class="myButton-gotv"><a href="#" title="one"><span>one</span></a></li>
-					<li id="two" class="myButton-gotv"><a href="#" title="two"><span>two</span></a></li>
-					<li id="three" class="myButton-gotv"><a href="#" title="three"><span>three</span></a></li>
-					<li id="four" class="myButton-gotv"><a href="#" title="four"><span>four</span></a></li>
-					<li id="five" class="myButton-gotv"><a href="#" title="five"><span>five</span></a></li>
-					<li id="six" class="myButton-gotv"><a href="#" title="six"><span>six</span></a></li>
-					<li id="seven" class="myButton-gotv"><a href="#" title="seven"><span>seven</span></a></li>
-					<li id="eight" class="myButton-gotv"><a href="#" title="eight"><span>eight</span></a></li>
-					<li id="nine" class="myButton-gotv"><a href="#" title="nine"><span>nine</span></a></li>
-					<li id="menu" class="myButton-gotv"><a href="#" title="menu"><span>menu</span></a></li>
-					<li id="zero" class="myButton-gotv"><a href="#" title="zero"><span>zero</span></a></li>
-					<li id="exit" class="myButton-gotv"><a href="#" title="exit"><span>exit</span></a></li>
-					<li id="volume_plus" class="myButton-gotv"><a href="#" title="volume_plus"><span>volume_plus</span></a></li>
-					<li id="volume_minus" class="myButton-gotv"><a href="#" title="volume_minus"><span>volume_minus</span></a></li>
-					<li id="mute" class="myButton-gotv"><a href="#" title="mute"><span>mute</span></a></li>
-					<li id="epg" class="myButton-gotv"><a href="#" title="epg"><span>epg</span></a></li>
-					<li id="channel_plus" class="myButton-gotv"><a href="#" title="channel_plus"><span>channel_plus</span></a></li>
-					<li id="channel_minus" class="myButton-gotv"><a href="#" title="channel_minus"><span>channel_minus</span></a></li>
-					<li id="up" class="myButton-gotv"><a href="#" title="up"><span>up</span></a></li>
-					<li id="left" class="myButton-gotv"><a href="#" title="left"><span>left</span></a></li>
-					<li id="ok" class="myButton-gotv"><a href="#" title="ok"><span>ok</span></a></li>
-					<li id="right" class="myButton-gotv"><a href="#" title="right"><span>right</span></a></li>
-					<li id="down" class="myButton-gotv"><a href="#" title="down"><span>down</span></a></li>
-					<li id="loop" class="myButton-gotv"><a href="#" title="loop"><span>loop</span></a></li>
-					<li id="info" class="myButton-gotv"><a href="#" title="info"><span>info</span></a></li>
-					<li id="questionmark" class="myButton-gotv"><a href="#" title="questionmark"><span>questionmark</span></a></li>
-					<li id="arrows" class="myButton-gotv"><a href="#" title="arrows"><span>arrows</span></a></li>
-					<li id="ttx" class="myButton-gotv"><a href="#" title="ttx"><span>ttx</span></a></li>
-					<li id="subs" class="myButton-gotv"><a href="#" title="subs"><span>subs</span></a></li>
-					<li id="fast_back" class="myButton-gotv"><a href="#" title="fast_back"><span>fast_back</span></a></li>
-					<li id="play" class="myButton-gotv"><a href="#" title="play"><span>play</span></a></li>
-					<li id="fast_forward" class="myButton-gotv"><a href="#" title="fast_forward"><span>fast_forward</span></a></li>
-					<li id="stop" class="myButton-gotv"><a href="#" title="stop"><span>stop</span></a></li>
-					<li id="pause" class="myButton-gotv"><a href="#" title="pause"><span>pause</span></a></li>
-					<li id="rec" class="myButton-gotv"><a href="#" title="rec"><span>rec</span></a></li>
-					<li id="red" class="myButton-gotv"><a href="#" title="red"><span>red</span></a></li>
-					<li id="green" class="myButton-gotv"><a href="#" title="green"><span>green</span></a></li>
-					<li id="yellow" class="myButton-gotv"><a href="#" title="yellow"><span>yellow</span></a></li>
-					<li id="blue" class="myButton-gotv"><a href="#" title="blue"><span>blue</span></a></li>
-					<li id="replay" class="myButton-gotv"><a href="#" title="replay"><span>replay</span></a></li>
-					<li id="sound" class="myButton-gotv"><a href="#" title="sound"><span>sound</span></a></li>
-					<li id="skip" class="myButton-gotv"><a href="#" title="skip"><span>skip</span></a></li>
-					<li id="clock" class="myButton-gotv"><a href="#" title="clock"><span>clock</span></a></li>			
+					<li id="power_tv" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="source" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="power" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="one" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="two" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="three" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="four" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="five" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="six" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="seven" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="eight" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="nine" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="menu" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="zero" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="exit" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="volume_plus" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="volume_minus" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="mute" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="epg" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="channel_plus" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="channel_minus" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="up" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="left" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="ok" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="right" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="down" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="loop" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="info" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="questionmark" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="ttx" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="arrows" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="subs" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="fast_back" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="play" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="fast_forward" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="stop" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="pause" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="rec" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="red" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="green" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="yellow" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="blue" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="replay" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="sound" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="skip" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>
+					<li id="clock" class="myButton-${config.remote_template}"><a href="#" title=" "><span> </span></a></li>			
                 </ul>
 
 			</div>	

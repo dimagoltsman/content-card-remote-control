@@ -1,9 +1,10 @@
 function getRemoteStyle_strongtv(config) {
    
-   const base_url = `/local/content-card-remote-control/${config.remote_template}`;    
+   const template = config.remote_template;
+   const base_url = `/hacsfiles/generic-remote-control-card/remotes/${template}`;
     
   return `
-    ha-card{
+  ha-card{
     	background-color:transparent;
     	box-shadow:var(--paper-material-elevation-0_-_box-shadow);
     }
@@ -28,7 +29,7 @@ function getRemoteStyle_strongtv(config) {
 #remote-control-strongtv h2,
 #remote-control-strongtv span {
 	position: absolute;
-	left: 5000px
+	display: none;
 }
 
 #remote-control-strongtv ul {
@@ -858,60 +859,60 @@ function getRemoteHtml_strongtv(config){return `
 					Main navigation
 				</h2>
 				<ul>
-					<li id="audio" class="myButton-strongtv"><a href="#" title="audio"><span>audio</span></a></li>
-					<li id="back" class="myButton-strongtv"><a href="#" title="back"><span>back</span></a></li>
-					<li id="blue" class="myButton-strongtv"><a href="#" title="blue"><span>blue</span></a></li>
-					<li id="button" class="myButton-strongtv"><a href="#" title="button"><span>button</span></a></li>
-					<li id="ch_down" class="myButton-strongtv"><a href="#" title="ch_down"><span>ch_down</span></a></li>
-					<li id="ch_up" class="myButton-strongtv"><a href="#" title="ch_up"><span>ch_up</span></a></li>
-					<li id="down" class="myButton-strongtv"><a href="#" title="down"><span>down</span></a></li>
-					<li id="eco" class="myButton-strongtv"><a href="#" title="eco"><span>eco</span></a></li>
-					<li id="eight" class="myButton-strongtv"><a href="#" title="eight"><span>eight</span></a></li>
-					<li id="epg" class="myButton-strongtv"><a href="#" title="epg"><span>epg</span></a></li>
-					<li id="fast_back" class="myButton-strongtv"><a href="#" title="fast_back"><span>fast_back</span></a></li>
-					<li id="fast_forward" class="myButton-strongtv"><a href="#" title="fast_forward"><span>fast_forward</span></a></li>
-					<li id="fav" class="myButton-strongtv"><a href="#" title="fav"><span>fav</span></a></li>
-					<li id="five" class="myButton-strongtv"><a href="#" title="five"><span>five</span></a></li>
-					<li id="four" class="myButton-strongtv"><a href="#" title="four"><span>four</span></a></li>
-					<li id="green" class="myButton-strongtv"><a href="#" title="green"><span>green</span></a></li>
-					<li id="home" class="myButton-strongtv"><a href="#" title="home"><span>home</span></a></li>
-					<li id="info" class="myButton-strongtv"><a href="#" title="info"><span>info</span></a></li>
-					<li id="left" class="myButton-strongtv"><a href="#" title="left"><span>left</span></a></li>
-					<li id="list" class="myButton-strongtv"><a href="#" title="list"><span>list</span></a></li>
-					<li id="loop" class="myButton-strongtv"><a href="#" title="loop"><span>loop</span></a></li>
-					<li id="menu" class="myButton-strongtv"><a href="#" title="menu"><span>menu</span></a></li>
-					<li id="mute" class="myButton-strongtv"><a href="#" title="mute"><span>mute</span></a></li>
-					<li id="netflix" class="myButton-strongtv"><a href="#" title="netflix"><span>netflix</span></a></li>
-					<li id="nine" class="myButton-strongtv"><a href="#" title="nine"><span>nine</span></a></li>
-					<li id="ok" class="myButton-strongtv"><a href="#" title="ok"><span>ok</span></a></li>
-					<li id="one" class="myButton-strongtv"><a href="#" title="one"><span>one</span></a></li>
-					<li id="option" class="myButton-strongtv"><a href="#" title="option"><span>option</span></a></li>
-					<li id="play_pause" class="myButton-strongtv"><a href="#" title="play_pause"><span>play_pause</span></a></li>
-					<li id="power" class="myButton-strongtv"><a href="#" title="Power"><span>Power</span></a></li>
-					<li id="record" class="myButton-strongtv"><a href="#" title="record"><span>record</span></a></li>
-					<li id="red" class="myButton-strongtv"><a href="#" title="red"><span>red</span></a></li>
-					<li id="right" class="myButton-strongtv"><a href="#" title="right"><span>right</span></a></li>
-					<li id="seven" class="myButton-strongtv"><a href="#" title="seven"><span>seven</span></a></li>
-					<li id="six" class="myButton-strongtv"><a href="#" title="six"><span>six</span></a></li>
-					<li id="skip_back" class="myButton-strongtv"><a href="#" title="skip_back"><span>skip_back</span></a></li>
-					<li id="skip_forward" class="myButton-strongtv"><a href="#" title="skip_forward"><span>skip_forward</span></a></li>
-					<li id="sleep" class="myButton-strongtv"><a href="#" title="sleep"><span>sleep</span></a></li>
-					<li id="source" class="myButton-strongtv"><a href="#" title="source"><span>source</span></a></li>
-					<li id="stop" class="myButton-strongtv"><a href="#" title="stop"><span>stop</span></a></li>
-                    <li id="sub" class="myButton-strongtv"><a href="#" title="sub"><span>sub</span></a></li>
-					<li id="text" class="myButton-strongtv"><a href="#" title="text"><span>text</span></a></li>
-					<li id="three" class="myButton-strongtv"><a href="#" title="three"><span>three</span></a></li>
-					<li id="tv" class="myButton-strongtv"><a href="#" title="tv"><span>tv</span></a></li>
-					<li id="two" class="myButton-strongtv"><a href="#" title="two"><span>two</span></a></li>
-					<li id="up" class="myButton-strongtv"><a href="#" title="up"><span>up</span></a></li>
-					<li id="usb" class="myButton-strongtv"><a href="#" title="usb"><span>usb</span></a></li>
-					<li id="volume_minus" class="myButton-strongtv"><a href="#" title="volume_minus"><span>volume_minus</span></a></li>
-					<li id="volume_plus" class="myButton-strongtv"><a href="#" title="volume_plus"><span>volume_plus</span></a></li>
-					<li id="yellow" class="myButton-strongtv"><a href="#" title="yellow"><span>yellow</span></a></li>
-					<li id="youtube" class="myButton-strongtv"><a href="#" title="youtube"><span>youtube</span></a></li>
-					<li id="zero" class="myButton-strongtv"><a href="#" title="zero"><span>zero</span></a></li>
-					<li id="zoom_in" class="myButton-strongtv"><a href="#" title="zoom_in"><span>zoom_in</span></a></li>
-					<li id="zoom_out" class="myButton-strongtv"><a href="#" title="zoom_out"><span>zoom_out</span></a></li>
+					<li id="audio" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="back" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="blue" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="button" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="ch_down" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="ch_up" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="down" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="eco" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="eight" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="epg" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="fast_back" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="fast_forward" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="fav" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="five" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="four" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="green" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="home" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="info" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="left" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="list" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="loop" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="menu" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="mute" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="netflix" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="nine" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="ok" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="one" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="option" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="play_pause" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="power" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="record" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="red" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="right" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="seven" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="six" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="skip_back" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="skip_forward" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="sleep" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="source" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="stop" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+                                        <li id="sub" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="text" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="three" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="tv" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="two" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="up" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="usb" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="volume_minus" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="volume_plus" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="yellow" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="youtube" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="zero" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="zoom_in" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
+					<li id="zoom_out" class="myButton-strongtv"><a href="#" title=" "><span> </span></a></li>
 
 
 
